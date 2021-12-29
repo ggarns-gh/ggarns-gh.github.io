@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+remote_theme: jekyll/minima
+
+title: Ai Data Engineering
+description: Adventures in Data Engineering
+author:
+  name: Graham Garnsworthy
+
+header_pages:
+  - contact.md
+
+minima:
+  skin: solarized-dark
+  social_links:
+    linkedin: graham-garnsworthy
+
+plugins:
+  - jekyll-feed
