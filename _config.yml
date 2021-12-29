@@ -12,3 +12,6 @@ minima:
   skin: solarized-dark
   social_links:
     linkedin: graham-garnsworthy
+
+plugins:
+  - jekyll-feed
