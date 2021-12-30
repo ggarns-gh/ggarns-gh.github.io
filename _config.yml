@@ -1,18 +1,24 @@
 remote_theme: jekyll/minima
 
 title: Ai Data Engineering
-description: Adventures in Data Engineering will be a collection of articles about developing and maintaining data-oriented solutions.
+description: Adventures in Data Engineering is a collection of articles about developing and maintaining data-oriented solutions.
+
 author:
   name: Graham Garnsworthy
+
+permalink: /:title/
 
 header_pages:
   - about.md
 
 minima:
+  date_format: '%d %b %Y'
+
   skin: solarized-dark
+
   social_links:
-    linkedin: graham-garnsworthy
     github: ggarns-gh
+    linkedin: graham-garnsworthy
 
 plugins:
   - jekyll-feed
