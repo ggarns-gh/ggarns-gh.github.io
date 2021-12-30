@@ -20,5 +20,7 @@ minima:
     github: ggarns-gh
     linkedin: graham-garnsworthy
 
+show_excerpts: true
+
 plugins:
   - jekyll-feed

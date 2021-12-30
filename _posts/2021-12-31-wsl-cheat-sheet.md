@@ -2,7 +2,9 @@
 layout: post
 title: Windows Subsystem for Linux (WSL) Cheat Sheet
 author: Graham Garnsworthy
-modified_date: 2022-01-01
+publish_date: 2021-12-31
+published_date: 2022-01-01
+modified_date: 2022-01-22
 ---
 
 ![{{ page.title }}](/assets/img/wsl-feature.png)
