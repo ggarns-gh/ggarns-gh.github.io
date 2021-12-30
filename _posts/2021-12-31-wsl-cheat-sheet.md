@@ -43,6 +43,18 @@ Use the following command, replacing the `<DistributionName>` with the your requ
 wsl --install --distribution <DistributionName>
 ```
 
+*You might be prompted to reboot your system if the **Virtual Machine Platform** or **Windows Subsystem for Linux** Windows Features were previously turned off.*
+
+During installation, you'll need to create a UNIX username and password. This username is specific to each distribution you install and has the ability to run `sudo` administrative commands.
+
+![{{ page.title }}](/assets/img/wsl-installation-user.png)
+
+Once the installation has completed, you should update and upgrade your packages. The following command will achieve this for **Ubuntu** or **Debian** distibutions.
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
 ## Unregister a Linux distribution
 
 Unregisters the distribution specified by `<DistributionName>` and deletes the root file system.
@@ -50,3 +62,6 @@ Unregisters the distribution specified by `<DistributionName>` and deletes the r
 ```
 wsl --unregister <DistributionName>
 ```
+
+
+wsl --install --distribution Ubuntu-20.04
