@@ -6,7 +6,6 @@ author:
   name: Graham Garnsworthy
 
 header_pages:
-  - contact.md
 
 minima:
   skin: solarized-dark
