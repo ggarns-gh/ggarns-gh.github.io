@@ -10,7 +10,7 @@ header_pages:
 
 minima:
   date_format: "%d %B %Y"
-  skin: solarized
+  skin: solarized-dark
   social_links:
     linkedin: graham-garnsworthy
     github: ggarns-gh
