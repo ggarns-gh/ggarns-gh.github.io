@@ -13,9 +13,6 @@ permalink: /:title/
 header_pages:
   - about.md
 
-header_pages:
-  - contact.md
-
 minima:
   date_format: '%d %b %Y'
 
