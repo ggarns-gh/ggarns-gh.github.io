@@ -6,6 +6,8 @@ description: Adventures in Data Engineering is a collection of articles about de
 author:
   name: Graham Garnsworthy
 
+google_analytics: G-32KLB1GHK7
+
 permalink: /:title/
 
 header_pages:
