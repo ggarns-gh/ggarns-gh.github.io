@@ -55,6 +55,20 @@ Once the installation has completed, you should update and upgrade your packages
 sudo apt update && sudo apt upgrade
 ```
 
+## Terminate or shutdown 
+
+To terminate a specific distribution, run the following command, replacing the `<DistributionName>` as required.
+
+```
+wsl --terminate <DistributionName>
+```
+
+To terminate all running distributions and the WSL 2 lightweight utility virtual machine, run the following command.
+
+```
+wsl --shutdown
+```
+
 ## Unregister a Linux distribution
 
 Unregisters the distribution specified by `<DistributionName>` and deletes the root file system.
@@ -63,5 +77,12 @@ Unregisters the distribution specified by `<DistributionName>` and deletes the r
 wsl --unregister <DistributionName>
 ```
 
+---
 
-wsl --install --distribution Ubuntu-20.04
+## Futher reading and references
+
+### Microsoft documentation
+
+- [Basic commands for WSL](https://docs.microsoft.com/en-us/windows/wsl/basic-commands)
+- [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
+- [Set up a WSL development environment](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
