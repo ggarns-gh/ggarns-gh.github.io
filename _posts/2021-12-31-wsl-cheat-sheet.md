@@ -1,17 +1,24 @@
 ---
 layout: post
-title: Windows Subsystem for Linux (WSL) Cheat Sheet
+title: 'Quick Reference: Windows Subsystem for Linux (WSL)'
 author: Graham Garnsworthy
-modified_date: 2022-01-22
+modified_date: 2022-01-03
 ---
 
 This cheat sheet lists the commands I use most often when working with WSL and describes what I use them for.
 
 ![{{ page.title }}](/assets/img/wsl-feature.png)
 
-## List available Linux distributions
+- [Installing a Linux distribution](#heading-installing)
+- [Listing installed distributions](#heading-listing)
 
-Before you can install a specific distribution, you need to know which are available. The following command will list all the available distributions.
+## Installing a Linux distribution {#heading-installing}
+
+The easiest method to install a Linux distribution is to use the install command, but you will need to need to meet [Microsoft's prerequisites](https://docs.microsoft.com/en-us/windows/wsl/install#prerequisites).
+
+> You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11.
+
+The following command will list all the distributions available in the Microsoft Store. You can install distributions other than those listed but you will need to import them first. A link to the Microsoft documentation to do this is included [below](#heading-further-reading).
 
 ```
 wsl --list --online
@@ -31,13 +38,7 @@ The output from running this command will look similar to the output shown below
   Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
 
-## Install a specific Linux distribution
-
-To use the install command, you'll need to need to meet [Microsoft's prerequisites](https://docs.microsoft.com/en-us/windows/wsl/install#prerequisites).
-
-> You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11.
-
-Use the following command, replacing the `<DistributionName>` with the your required distribution name, to start the installation. Alternatively, if you want to install the default distribution, you can omit the `--distribution <DistributionName>` option.
+If you want to install one of the available distributions, run the following command, replacing the `<DistributionName>` with the name of the distribution you require. Alternatively, if you want to install the default distribution, you can omit the `--distribution <DistributionName>` option.
 
 ```
 wsl --install --distribution <DistributionName>
@@ -47,13 +48,15 @@ wsl --install --distribution <DistributionName>
 
 During installation, you'll need to create a UNIX username and password. This username is specific to each distribution you install and has the ability to run `sudo` administrative commands.
 
-![{{ page.title }}](/assets/img/wsl-installation-user.png)
+![{{ page.title }}](/assets/img/wsl-installation-username.png)
 
 Once the installation has completed, you should update and upgrade your packages. The following command will achieve this for **Ubuntu** or **Debian** distibutions.
 
 ```bash
 sudo apt update && sudo apt upgrade
 ```
+
+## Listing installed distributions {#heading-listing}
 
 ## Terminate or shutdown 
 
@@ -79,10 +82,11 @@ wsl --unregister <DistributionName>
 
 ---
 
-## Futher reading and references
+## Futher reading and references {#heading-further-reading}
 
 ### Microsoft documentation
 
 - [Basic commands for WSL](https://docs.microsoft.com/en-us/windows/wsl/basic-commands)
 - [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
 - [Set up a WSL development environment](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
+- [Import any Linux distribution to use with WSL](https://docs.microsoft.com/en-us/windows/wsl/use-custom-distro)
